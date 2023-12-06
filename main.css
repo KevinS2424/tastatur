@@ -80,6 +80,15 @@ svg {
   Padding: 10px;
 }
 
+.startBtn:hover {
+  background-color: darkgreen; /* Grüne Hintergrundfarbe */
+  color: #fff; /* Weiße Textfarbe */
+  border: 2px solid white;
+  font-size: 24px; /* Wähle die gewünschte Schriftgröße */
+  border-radius: 20px;
+  Padding: 10px;
+}
+
 .stopBtn {
   background-color: #FF0000; /* Rote Hintergrundfarbe */
   color: #fff; /* Weiße Textfarbe */
@@ -88,6 +97,16 @@ svg {
   border-radius: 20px;
   Padding: 10px;
 }
+
+.stopBtn:hover {
+  background-color: darkred; /* Rote Hintergrundfarbe */
+  color: #fff; /* Weiße Textfarbe */
+  border: 2px solid white; /* Roter Rand */
+  font-size: 24px; /* Wähle die gewünschte Schriftgröße */
+  border-radius: 20px;
+  Padding: 10px;
+}
+
 
 svg {
   width: 250px;
