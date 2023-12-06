@@ -1,0 +1,26 @@
+
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tastatur-Lernspiel</title>
+</head>
+<body>
+  <canvas id="birthday"></canvas>
+  <label for="targetWord">Zielwort eingeben*:</label>
+  <input type="text" id="targetWord" placeholder="Gib ein Wort ein"><br>
+  <button class="startBtn" onclick="startGame()">Start</button>
+  <button class="stopBtn" onclick="stopGame(); stopFireworks();">Stop</button>
+    <div id="message"></div>
+<br>
+  <div id="keyboard">
+    <!-- Tasten hier einfügen -->
+  </div>
+  <br>
+  <br>
+  <small><center>*Bitte beachten, dass die Umschalttaste nach Drücken von "Start" nicht funktioniert und als falsche Taste gewertet wird.<br> Egal ob das Zielwort initial mit Groß- oder Kleinbuchstaben eingegeben wird, es geht nach drücken auf "Start" nur darum die richtigen Tasten, in der richtigen Reihenfolge zu drücken.</center> </small>
+
+  <script src="script.js"></script>
+</body>
+
