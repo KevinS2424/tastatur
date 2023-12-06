@@ -1,0 +1,115 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #b3e0ff;
+}
+
+label, input, button {
+  margin-bottom: 10px;
+}
+
+
+
+#keyboard {
+  display: grid;
+  grid-template-columns: repeat(10, 50px); /* Ändere die Breite der Tasten nach Bedarf */
+  gap: 9px;
+}
+
+.key {
+  font-size: 18px;
+  padding: 10px;
+  padding-right: 30px;
+ 
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.key:hover {
+  background-color: #d3d3d3;
+}
+
+.key.correct {
+  background-color: #a7e7a1;
+}
+
+.key.empty {
+  visibility: hidden;
+}
+
+.count {
+  font-size: 12px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 2px 5px;
+  margin-left: 4px;
+}
+
+#message {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+svg {
+  margin-top: 10px;
+}
+
+#targetWord {
+  font-size: 24px; /* Wähle die gewünschte Schriftgröße */
+  font-weight: bold; /* Optional: Fett hervorheben */
+  margin: 10px auto; /* Zentriert das Zielwort horizontal */
+  display: block; /* Stellt sicher, dass das Zielwort auf einer neuen Linie angezeigt wird */
+  text-align: center; /* Zentriert den Text innerhalb des Elements */
+}
+
+.startBtn {
+  background-color: #4CAF50; /* Grüne Hintergrundfarbe */
+  color: #fff; /* Weiße Textfarbe */
+  border: 2px solid white;
+  font-size: 24px; /* Wähle die gewünschte Schriftgröße */
+  border-radius: 20px;
+  Padding: 10px;
+}
+
+.stopBtn {
+  background-color: #FF0000; /* Rote Hintergrundfarbe */
+  color: #fff; /* Weiße Textfarbe */
+  border: 2px solid white; /* Roter Rand */
+  font-size: 24px; /* Wähle die gewünschte Schriftgröße */
+  border-radius: 20px;
+  Padding: 10px;
+}
+
+svg {
+  width: 250px;
+  animation: firework 2.5s cubic-bezier(0.165,0.84,0.44,1) infinite;
+}
+
+@keyframes firework {
+  0% {
+    transform: scale(0.1) translateY(500%);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: scale(1) translateY(0%);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(0.9) translateY(7.5%);
+  }
+  100% {
+    transform: scale(0.8) translateY(10%);
+    opacity: 0;
+  }
